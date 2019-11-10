@@ -1,7 +1,7 @@
 version: '3.5'
 services:
   aws-cli-cron:
-    image: mattbanner/resources-cli-cron:latest
+    image: mattbanner/aws-cli-cron:latest
     volumes:
       - /your/cron/:/resource/cronjobs/
       - /your/data/:/data/
