@@ -1,10 +1,6 @@
 FROM debian:stretch-slim
 LABEL maintainer = "Matt Banner <matt@banner.wtf>"
 ENV DEBIAN_FRONTEND="noninteractive"
-ENV HOME="/root"
-ENV LC_ALL="C.UTF-8"
-ENV LANG="en_US.UTF-8"
-ENV LANGUAGE="en_US.UTF-8"
 
 RUN apt-get update && apt-get install -y \
     cron curl unzip && \
