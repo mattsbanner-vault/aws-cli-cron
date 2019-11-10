@@ -3,7 +3,7 @@ services:
   aws-cli-cron:
     image: mattbanner/aws-cli-cron:latest
     volumes:
-      - /your/cron/:/resource/cronjobs/
+      - /your/resource/:/resource/
       - /your/data/:/data/
     environment:
       - AWS_ACCESS_KEY_ID=KEY

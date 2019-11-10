@@ -3,12 +3,11 @@
 set -o pipefail
 set -o errexit
 
-MODE="$1"
+# Echo cronjobs to cron file
 CRONFILE="/etc/cron.d/awscli"
-
 touch $CRONFILE
 echo "" >> $CRONFILE
-echo "$(cat /resource/cronjobs/cron)" >> $CRONFILE
+echo "$(cat /resource/cron)" >> $CRONFILE
 echo "" >> $CRONFILE
 
 # Check & Set
