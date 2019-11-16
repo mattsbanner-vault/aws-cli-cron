@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     mkdir /root/.aws/ && \
     touch /root/.aws/config && \
     touch /root/.aws/credentials && \
+    mkdir /var/log/cron/ && \
     rm -f /awscliv2.zip && \
     rm -rf /var/lib/apt/lists/*
 
